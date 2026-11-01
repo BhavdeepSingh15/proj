@@ -1,0 +1,42 @@
+/* Self-hosted, subset variable fonts (SIL OFL 1.1). Built by
+   scripts/subset-fonts.py from the Fontsource packages. */
+@font-face {
+  font-family: "Newsreader Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("../fonts/newsreader-roman.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Newsreader Variable";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200 800;
+  src: url("../fonts/newsreader-italic.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "Instrument Sans Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  src: url("../fonts/instrument-sans.woff2") format("woff2-variations");
+}
+
+/* Metric-matched fallbacks keep text from jumping when the web fonts arrive. */
+@font-face {
+  font-family: "Newsreader Fallback";
+  src: local("Georgia"), local("Times New Roman");
+  size-adjust: 96%;
+  ascent-override: 92%;
+  descent-override: 24%;
+}
+
+@font-face {
+  font-family: "Instrument Sans Fallback";
+  src: local("Arial"), local("Helvetica");
+  size-adjust: 97%;
+  ascent-override: 96%;
+  descent-override: 25%;
+}

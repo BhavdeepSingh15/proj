@@ -1,0 +1,175 @@
+/* Motion states. Everything here applies only when <html> has .motion, which
+   the inline head script adds when JavaScript runs and the visitor allows
+   motion. Without it (reduced motion, no JS, or the 3.5 s fail-safe) every
+   element is simply visible. */
+
+/* Hidden starting states, revealed by GSAP on scroll. Opacity only (never
+   visibility), so screen readers always get the whole page. */
+.motion [data-reveal],
+.motion [data-mask] {
+  opacity: 0;
+}
+
+.split-line {
+  padding-bottom: 0.06em;
+}
+
+/* ── 1. Loader (CSS only, starts at first paint) ─────────────────────── */
+.loader {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  place-items: center;
+  background: var(--night);
+  color: var(--cream);
+  pointer-events: none;
+}
+
+.show-loader .loader {
+  display: grid;
+  animation: loader-out 0.5s var(--ease-glide) 1.2s forwards;
+}
+
+.loader__inner {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+}
+
+.loader__word {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  letter-spacing: -0.01em;
+  opacity: 0;
+  animation: fade-in 0.4s var(--ease-calm) 0.05s forwards;
+}
+
+.loader__ripple {
+  width: 160px;
+  color: var(--night-soft);
+  clip-path: inset(0 100% 0 0);
+  animation: wipe 0.8s var(--ease-glide) 0.2s forwards;
+}
+
+.loader__label {
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--night-soft);
+  opacity: 0;
+  animation: fade-in 0.3s var(--ease-calm) 0.6s forwards;
+}
+
+@media (max-width: 767px) {
+  .loader__word {
+    font-size: 1.125rem;
+  }
+  .loader__ripple {
+    width: 120px;
+  }
+}
+
+/* ── 2. Hero intro (CSS, so it never waits for JavaScript) ──────────── */
+.show-loader {
+  --intro: 1.3s;
+}
+
+.no-loader {
+  --intro: 0.1s;
+}
+
+.motion .hero__char {
+  transform: translateY(108%);
+  animation: char-up 1.2s var(--ease-calm) forwards;
+  animation-delay: calc(var(--intro, 0.1s) + var(--i) * 0.035s);
+}
+
+/* Small items fade up; the headline and intro only rise (they stay
+   painted from the start so they can count as the LCP element). */
+.motion .intro-a {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: rise-in 0.9s var(--ease-calm) forwards;
+  animation-delay: calc(var(--intro, 0.1s) + 0.5s + var(--d, 0s));
+}
+
+.motion .intro-b {
+  transform: translateY(12px);
+  animation: rise-only 0.9s var(--ease-calm) forwards;
+  animation-delay: calc(var(--intro, 0.1s) + 0.45s + var(--d, 0s));
+}
+
+.motion .hero__pic img {
+  animation: settle 2.4s var(--ease-calm) both;
+  animation-delay: var(--intro, 0.1s);
+}
+
+.motion.is-home .nav {
+  animation: nav-in 0.6s var(--ease-calm) both;
+  animation-delay: calc(var(--intro, 0.1s) + 0.6s);
+}
+
+@media (max-width: 767px) {
+  .motion .hero__char {
+    animation-duration: 1s;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wipe {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes loader-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes char-up {
+  to {
+    transform: none;
+  }
+}
+
+@keyframes rise-in {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes rise-only {
+  to {
+    transform: none;
+  }
+}
+
+@keyframes settle {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes nav-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
