@@ -1,10 +1,13 @@
-import { useRef } from "react";
+import { Fragment, useRef } from "react";
 import { ChatIcon } from "~/components/Icons";
 import { HeroPicture, Picture } from "~/components/Picture";
 import { contact, hero, practice, ui } from "~/content/site";
 import { useHeroMotion } from "~/motion/sections/hero";
 
-const chars = Array.from(practice.wordmark);
+// Each word is its own mask, so a two-line wordmark (phones) still rises
+// letter by letter from below its own line. --i runs across all letters.
+let letter = 0;
+const words = practice.wordmark.split(" ").map((w) => Array.from(w).map((c) => ({ c, i: letter++ })));
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -59,10 +62,17 @@ export function Hero() {
 
         <h1 id="hero-title" className="hero__wordmark">
           <span className="hero__mask" aria-hidden="true">
-            {chars.map((c, i) => (
-              <span key={i} className="hero__char" style={{ "--i": i } as React.CSSProperties}>
-                {c}
-              </span>
+            {words.map((word, w) => (
+              <Fragment key={w}>
+                {w > 0 && " "}
+                <span className="hero__word">
+                  {word.map(({ c, i }) => (
+                    <span key={i} className="hero__char" style={{ "--i": i } as React.CSSProperties}>
+                      {c}
+                    </span>
+                  ))}
+                </span>
+              </Fragment>
             ))}
           </span>
           <span className="sr-only">{practice.name}</span>

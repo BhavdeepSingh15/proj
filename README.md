@@ -1,6 +1,6 @@
-# Stillwater Counselling — showcase website
+# Mind Mysteries — showcase website
 
-A calm, mobile-first website for Stillwater Counselling, built with **React + Node**
+A calm, mobile-first website for Mind Mysteries, built with **React + Node**
 (React 19, React Router 8 in framework mode, Vite, TypeScript). Node is used to
 build the site; the result is plain static files, so it can be hosted anywhere.
 
@@ -67,7 +67,7 @@ To change wording, edit `appendix.md` first, then the matching file in
 The site uses the "Sage & clay" palette: deep moss for the dark sections,
 sage for lines and fills, clay for buttons and accents, and warm cream and
 sand for the light sections. All colours live in `app/styles/tokens.css`. The
-original Stillwater greens are listed in a comment at the top of that file, so
+original greens are listed in a comment at the top of that file, so
 switching back means pasting those values in.
 
 ## Motion
@@ -122,7 +122,7 @@ python3 scripts/subset-fonts.py   # rebuilds the trimmed fonts in app/fonts
    - The "Mayo Clinic" reading link on Couples therapy points to `mymlc.com`,
      not `mayoclinic.org`. It is kept exactly as given in the appendix.
    - The Instagram handle (`aneek_mindcareclinic`) uses a different name from
-     Stillwater Counselling.
+     Mind Mysteries.
 
 ## How it was built (phases)
 

@@ -184,13 +184,25 @@
   font-size: var(--fs-wordmark);
   line-height: 0.86;
   letter-spacing: -0.035em;
-  white-space: nowrap;
 }
 
 .hero__mask {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .hero__wordmark {
+    white-space: nowrap;
+  }
+}
+
+/* One mask per word: the letters rise from below their own line. */
+.hero__word {
+  display: inline-block;
   overflow: hidden;
+  white-space: nowrap;
   padding: 0.06em 0.04em 0.08em;
+  vertical-align: top;
 }
 
 .hero__char {

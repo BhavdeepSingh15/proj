@@ -6,6 +6,9 @@ import { BookButton } from "./BookingNotice";
 import { ChatIcon, CloseIcon, MailIcon, MenuIcon } from "./Icons";
 import { Modal } from "./Modal";
 
+// Any part of the name after the wordmark (hidden on small phones).
+const brandRest = practice.name.replace(practice.wordmark, "").trim();
+
 /** Same-page anchors scroll smoothly (through Lenis on desktop) and move focus. */
 export function useAnchorClick() {
   const { pathname } = useLocation();
@@ -73,9 +76,9 @@ export function Nav() {
         <div className="nav__inner container">
           <a className="nav__brand" href="/" onClick={goHome}>
             <img src="/logo.svg" alt="" width="28" height="24" className="nav__logo" />
-            <span>
+            <span className="nav__brand-name">
               {practice.wordmark}
-              <span className="nav__brand-rest"> {practice.name.replace(practice.wordmark, "").trim()}</span>
+              {brandRest && <span className="nav__brand-rest"> {brandRest}</span>}
             </span>
             {/* Spoken name = the visible text, then where it goes. */}
             <span className="sr-only">, {ui.home}</span>

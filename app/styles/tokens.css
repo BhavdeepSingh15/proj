@@ -2,7 +2,7 @@
    dark sections, sage for lines and fills, clay as the one warm accent, warm
    cream and sand for the light sections. Every text pair meets WCAG AA.
 
-   To go back to the original Stillwater greens, replace the colour values
+   To go back to the original greens, replace the colour values
    below with: lake #3d6e68, deep #2e5651, deep-hover #3d6e68, tint #e0ece9,
    mist #f2f5f4, ink #22302d, soft #55625f, cream #f5f1e8, sand #ece5d8,
    night #141d1b, night-2 #1d2826, night-soft #a3b1ac, dawn #d8a873,
@@ -32,7 +32,7 @@
   /* Type */
   --font-display: "Newsreader Variable", "Newsreader Fallback", "Iowan Old Style", Georgia, serif;
   --font-body: "Instrument Sans Variable", "Instrument Sans Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --fs-wordmark: clamp(4.5rem, 17vw, 16rem);
+  --fs-wordmark: clamp(3.5rem, 20vw, 16rem); /* phones: two lines, "Mysteries" ≈4.05em */
   --fs-xl: clamp(3rem, 8vw, 7.5rem);
   --fs-l: clamp(2.25rem, 4.5vw, 4rem);
   --fs-m: clamp(1.5rem, 2.2vw, 2rem);
@@ -78,6 +78,8 @@
   :root {
     --gutter: 32px;
     --rise: 24px;
+    /* Sized so "Mind Mysteries" fits on one line (≈6.4em wide). */
+    --fs-wordmark: clamp(4.5rem, 13.4vw, 12.75rem);
   }
 }
 

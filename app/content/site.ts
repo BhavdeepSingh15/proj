@@ -11,8 +11,8 @@ const PHONE_DIGITS = "919463880582";
 const GOOGLE_PROFILE = "https://share.google/vqAyCZi9v7Z0cPVcf";
 
 export const practice = {
-  name: "Stillwater Counselling",
-  wordmark: "Stillwater",
+  name: "Mind Mysteries",
+  wordmark: "Mind Mysteries",
   tagline: "Clinical psychologist, Chandigarh",
   city: "Chandigarh",
   availability: "Accepting new clients, online and in person",
@@ -244,11 +244,11 @@ export const privacy = {
 };
 
 export const seo = {
-  title: "Stillwater Counselling | Clinical psychologist, Chandigarh",
+  title: "Mind Mysteries | Clinical psychologist, Chandigarh",
   description:
     "RCI-licensed Clinical Psychologist, Landmark Hospital, Chandigarh. Online and in-person therapy for teenagers, adults and couples.",
   // Set this to the final domain before launch (used for canonical and OG URLs).
-  siteUrl: "https://stillwater-counselling.vercel.app",
+  siteUrl: "https://mind-mysteries.vercel.app",
 };
 
 // Interface labels (not appendix copy). Listed in the PRD for approval.
@@ -275,7 +275,7 @@ export const ui = {
   home: "Home",
   backHome: "Back to home",
   opensNewTab: "(opens in a new tab)",
-  copyright: "© 2026 Stillwater Counselling",
+  copyright: "© 2026 Mind Mysteries",
   composer: {
     name: "Your name *",
     phone: "Phone or WhatsApp (optional)",

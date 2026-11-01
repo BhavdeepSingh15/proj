@@ -44,7 +44,8 @@ export const approvedChanges: { text: string; reason: string }[] = [
     text: "If you have a question about privacy, please send a WhatsApp message using the details on the Contact page.",
     reason: "Change 5: privacy rewrite (adapted from the account-deletion line)",
   },
-  { text: "Stillwater Counselling | Clinical psychologist, Chandigarh", reason: "SEO title: practice name + tagline" },
+  { text: "Mind Mysteries", reason: "Change 8: practice renamed from Stillwater Counselling (owner's instruction, 2 Nov 2026)" },
+  { text: "Mind Mysteries | Clinical psychologist, Chandigarh", reason: "SEO title: practice name + tagline" },
   {
     text: "RCI-licensed Clinical Psychologist, Landmark Hospital, Chandigarh. Online and in-person therapy for teenagers, adults and couples.",
     reason: "SEO description: hero kicker + specialties line",
