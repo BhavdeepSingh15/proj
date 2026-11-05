@@ -73,7 +73,7 @@ export const faqs = [
   },
   {
     q: "Is what I share kept confidential?",
-    a: "Yes. What you share is kept strictly confidential and is only shared with your written permission. The exceptions are a serious risk of harm to you or someone else, a court order, or situations the law requires to be reported. Even then, it will be discussed with you first wherever possible. Sessions are never recorded without your permission.",
+    a: "Yes. What you share is kept strictly confidential and is only shared with your written permission. The exceptions are any kind of abuse, a serious risk of harm to you or someone else, a court order, or situations the law requires to be reported. Even then, it will be discussed with you first wherever possible. Sessions are never recorded without your permission.",
   },
   {
     q: "Do you work with teenagers?",
@@ -127,6 +127,8 @@ export const policies = [
     points: [
       "Everything we discuss is strictly confidential and is only shared with your written permission.",
       "The exceptions are: a high risk of harm to yourself, a plan to harm someone else, a court order for your case history, situations the law requires to be reported, or when you ask for information to be shared.",
+      // Change 10: abuse clause (owner's instruction, 6 Nov 2026).
+      "If there is any kind of abuse involved, it may need to be shared with the appropriate people or authorities.",
       "In those situations your next of kin or another professional may need to be involved. This will be discussed with you first.",
       "Your case may be discussed with a supervisor or peer group with all identifying details removed. Some practice staff may see your information for administrative purposes.",
       "For clients under 18, parents are kept informed only to the extent that helps the family, and this is discussed with you first.",

@@ -28,6 +28,7 @@ export const meta: Route.MetaFunction = () => [
       "@context": "https://schema.org",
       "@type": "Organization",
       name: practice.name,
+      slogan: practice.motto,
       url: `${seo.siteUrl}/`,
       logo: `${seo.siteUrl}/logo.svg`,
       sameAs: [contact.instagram, contact.googleProfile],

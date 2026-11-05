@@ -46,6 +46,13 @@ export const approvedChanges: { text: string; reason: string }[] = [
   },
   { text: "Mind Mysteries", reason: "Change 8: practice renamed from Stillwater Counselling (owner's instruction, 2 Nov 2026)" },
   { text: "Mind Mysteries | Clinical psychologist, Chandigarh", reason: "SEO title: practice name + tagline" },
+  { text: "Clarity meets Compassion", reason: "Change 9: tagline shown with the name (owner's instruction, 6 Nov 2026)" },
+  { text: "If there is any kind of abuse involved, it may need to be shared with the appropriate people or authorities.", reason: "Change 10: abuse clause in Confidentiality (owner's instruction, 6 Nov 2026)" },
+  { text: "The exceptions include any kind of abuse or a serious risk of harm.", reason: "Change 10: abuse clause, What to expect summary" },
+  {
+    text: "Yes. What you share is kept strictly confidential and is only shared with your written permission. The exceptions are any kind of abuse, a serious risk of harm to you or someone else, a court order, or situations the law requires to be reported. Even then, it will be discussed with you first wherever possible. Sessions are never recorded without your permission.",
+    reason: "Change 10: abuse clause, FAQ answer",
+  },
   {
     text: "RCI-licensed Clinical Psychologist, Landmark Hospital, Chandigarh. Online and in-person therapy for teenagers, adults and couples.",
     reason: "SEO description: hero kicker + specialties line",

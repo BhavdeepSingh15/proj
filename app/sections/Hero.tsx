@@ -60,6 +60,7 @@ export function Hero() {
           </div>
         </div>
 
+        <div className="hero__brand">
         <h1 id="hero-title" className="hero__wordmark">
           <span className="hero__mask" aria-hidden="true">
             {words.map((word, w) => (
@@ -77,6 +78,10 @@ export function Hero() {
           </span>
           <span className="sr-only">{practice.name}</span>
         </h1>
+        <p className="hero__motto intro-a" style={{ "--d": "0.4s" } as React.CSSProperties}>
+          {practice.motto}
+        </p>
+        </div>
 
         <p className="hero__avail intro-a" style={{ "--d": "0.5s" } as React.CSSProperties}>
           <span className="hero__dot" aria-hidden="true" />

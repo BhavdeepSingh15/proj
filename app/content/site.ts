@@ -13,6 +13,7 @@ const GOOGLE_PROFILE = "https://share.google/vqAyCZi9v7Z0cPVcf";
 export const practice = {
   name: "Mind Mysteries",
   wordmark: "Mind Mysteries",
+  motto: "Clarity meets Compassion",
   tagline: "Clinical psychologist, Chandigarh",
   city: "Chandigarh",
   availability: "Accepting new clients, online and in person",
@@ -145,7 +146,10 @@ export const expect = {
   columns: [
     {
       title: "Confidentiality",
-      lines: ["Everything we discuss is strictly confidential and is only shared with your written permission."],
+      lines: [
+        "Everything we discuss is strictly confidential and is only shared with your written permission.",
+        "The exceptions include any kind of abuse or a serious risk of harm.",
+      ],
     },
     { title: "50-minute sessions", lines: ["Sessions are 50 minutes, usually once a week."] },
     {

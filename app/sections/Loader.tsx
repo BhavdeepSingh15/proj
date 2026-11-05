@@ -16,7 +16,7 @@ export function Loader() {
             strokeLinecap="round"
           />
         </svg>
-        <p className="loader__label">{practice.city}</p>
+        <p className="loader__label">{practice.motto}</p>
       </div>
     </div>
   );

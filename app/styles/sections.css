@@ -176,8 +176,24 @@
   background: rgba(246, 241, 232, 0.1);
 }
 
-.hero__wordmark {
+/* The name and its tagline sit together in the "word" area. */
+.hero__brand {
   grid-area: word;
+  display: grid;
+  gap: clamp(6px, 1vw, 16px);
+}
+
+.hero__motto {
+  margin-bottom: 10px; /* phones: keeps it apart from the kicker below */
+  font-size: clamp(0.75rem, 0.62rem + 0.55vw, 1.0625rem);
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  line-height: 1.4;
+  color: rgba(246, 241, 232, 0.86);
+}
+
+.hero__wordmark {
   margin: 0 0 0 -0.04em;
   font-family: var(--font-display);
   font-weight: 350;
@@ -193,6 +209,15 @@
 @media (min-width: 768px) {
   .hero__wordmark {
     white-space: nowrap;
+  }
+  /* The tagline tucks up under "Mind", into the space the descender of
+     "y" uses further along, so the hero still fits a laptop screen. */
+  .hero__brand {
+    gap: 0;
+  }
+  .hero__motto {
+    margin-top: -1vw;
+    margin-bottom: 0;
   }
 }
 
