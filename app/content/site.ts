@@ -25,7 +25,7 @@ export const contact = {
   whatsappHours: "9 am to 7 pm",
   responseNote: "WhatsApp messages sent between 9 am and 7 pm are answered as soon as possible.",
   email: "anoopkaur1712@outlook.com",
-  instagram: "https://www.instagram.com/aneek_mindcareclinic/",
+  instagram: "https://www.instagram.com/mindmysteries_anoop/",
   linkedin: "https://www.linkedin.com/in/anoop-inder-kaur-0b75b4252",
   location: "Landmark Hospital, Sector 33, Chandigarh",
   googleProfile: GOOGLE_PROFILE,

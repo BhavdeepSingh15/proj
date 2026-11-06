@@ -46,6 +46,7 @@ export const approvedChanges: { text: string; reason: string }[] = [
   },
   { text: "Mind Mysteries", reason: "Change 8: practice renamed from Stillwater Counselling (owner's instruction, 2 Nov 2026)" },
   { text: "Mind Mysteries | Clinical psychologist, Chandigarh", reason: "SEO title: practice name + tagline" },
+  { text: "https://www.instagram.com/mindmysteries_anoop/", reason: "Change 11: new Instagram profile (owner's instruction, 6 Nov 2026)" },
   { text: "Clarity meets Compassion", reason: "Change 9: tagline shown with the name (owner's instruction, 6 Nov 2026)" },
   { text: "If there is any kind of abuse involved, it may need to be shared with the appropriate people or authorities.", reason: "Change 10: abuse clause in Confidentiality (owner's instruction, 6 Nov 2026)" },
   { text: "The exceptions include any kind of abuse or a serious risk of harm.", reason: "Change 10: abuse clause, What to expect summary" },

@@ -121,8 +121,6 @@ python3 scripts/subset-fonts.py   # rebuilds the trimmed fonts in app/fonts
 2. Open questions from the PRD, worth checking with the practice:
    - The "Mayo Clinic" reading link on Couples therapy points to `mymlc.com`,
      not `mayoclinic.org`. It is kept exactly as given in the appendix.
-   - The Instagram handle (`aneek_mindcareclinic`) uses a different name from
-     Mind Mysteries.
 
 ## How it was built (phases)
 
