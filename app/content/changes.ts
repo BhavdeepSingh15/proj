@@ -27,7 +27,8 @@ export const approvedChanges: { text: string; reason: string }[] = [
   { text: "Empanelled with", reason: "Change 7: Indian Army empanelment (owner's instruction, 27 Oct 2026)" },
   { text: "The Indian Army", reason: "Change 7: Indian Army empanelment (owner's instruction, 27 Oct 2026)" },
   { text: "Privacy", reason: "Page title" },
-  { text: "This website does not use cookies, sign-in, analytics or tracking.", reason: "Change 5: privacy rewrite" },
+  { text: "This website does not use cookies, sign-in or advertising trackers.", reason: "Change 5: privacy rewrite (analytics added 6 Nov 2026)" },
+  { text: "Visits are counted anonymously with Vercel Web Analytics (which pages are viewed, the country and the type of device) to understand how the site is used. No one is personally identified.", reason: "Change 12: Vercel Web Analytics (owner's instruction, 6 Nov 2026)" },
   {
     text: "The “Write an email” form works only inside your browser. It opens Gmail or your email app with a message you can read and change before sending. Nothing is sent from this website or saved.",
     reason: "Change 5: privacy rewrite",

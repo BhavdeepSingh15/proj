@@ -238,7 +238,8 @@ export const privacy = {
   title: "Privacy",
   // Change 5: rewritten for a static site that stores nothing.
   paragraphs: [
-    "This website does not use cookies, sign-in, analytics or tracking.",
+    "This website does not use cookies, sign-in or advertising trackers.",
+    "Visits are counted anonymously with Vercel Web Analytics (which pages are viewed, the country and the type of device) to understand how the site is used. No one is personally identified.",
     "The “Write an email” form works only inside your browser. It opens Gmail or your email app with a message you can read and change before sending. Nothing is sent from this website or saved.",
     "This website saves one small setting in your own browser: whether the opening animation has already played. It never leaves your device.",
     "When you tap WhatsApp, Instagram, LinkedIn or Google, you leave this website and that service’s own privacy policy applies. Like any website, the hosting provider processes technical data such as your IP address to deliver pages securely.",

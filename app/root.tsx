@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import type { Route } from "./+types/root";
 
@@ -63,6 +64,8 @@ export default function App() {
           <Outlet />
         </main>
         <Footer />
+        {/* Vercel Web Analytics: anonymous visit counts, no cookies. */}
+        <Analytics />
       </BookingProvider>
     </MotionProvider>
   );

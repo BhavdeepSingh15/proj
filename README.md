@@ -14,7 +14,8 @@ build the site; the result is plain static files, so it can be hosted anywhere.
   "For anything related to payments, please send a WhatsApp message."
 - The emergency notice and Tele-MANAS (14416 / 1-800-891-4416) appear in the
   footer, the Contact section and the mobile menu.
-- No cookies, analytics or tracking.
+- No cookies or advertising trackers. Visits are counted anonymously with Vercel
+  Web Analytics (no cookies; no one is personally identified).
 - The therapist's name appears only in the About section.
 
 ## Quick start
