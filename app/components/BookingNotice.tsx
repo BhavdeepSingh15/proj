@@ -1,7 +1,7 @@
 // "Book a session" never books here. It opens this notice, which explains that
 // bookings happen on WhatsApp and hands the visitor to the chat.
 import { createContext, useCallback, useContext, useRef, useState, type ReactNode } from "react";
-import { bookingNotice, contact, ui } from "~/content/site";
+import { bookingNotice, consent, contact, ui } from "~/content/site";
 import { ChatIcon, CloseIcon } from "./Icons";
 import { Modal } from "./Modal";
 
@@ -39,6 +39,12 @@ export function BookingProvider({ children }: { children: ReactNode }) {
           </h2>
           <p className="notice__text">{bookingNotice.text}</p>
           <p className="notice__text muted">{bookingNotice.hours}</p>
+          <p className="notice__text notice__consent">
+            {consent.reminder}{" "}
+            <a className="text-link" href="/consent">
+              {ui.consent.open}
+            </a>
+          </p>
           <div className="notice__actions">
             <a
               ref={continueRef}

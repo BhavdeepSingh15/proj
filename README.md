@@ -16,7 +16,9 @@ build the site; the result is plain static files, so it can be hosted anywhere.
   footer, the Contact section and the mobile menu.
 - No cookies or advertising trackers. Visits are counted anonymously with Vercel
   Web Analytics (no cookies; no one is personally identified).
-- The therapist's name appears only in the About section.
+- The therapist's name appears only in the About section (and in her own consent form PDF).
+- **Consent form** (`/consent`): visitors download her informed consent form, fill it in
+  and sign it, then send it back on WhatsApp or by email. Nothing is uploaded to this site.
 
 ## Quick start
 
@@ -114,6 +116,16 @@ python3 scripts/subset-fonts.py   # rebuilds the trimmed fonts in app/fonts
   counts as commercial, so the Pro plan is the one within Vercel's terms.
 - **Netlify** also works (free plan allows commercial sites): `netlify.toml` is
   included.
+
+## Consent form
+
+`public/consent-form.pdf` is her own informed consent form (from her Word file, wording
+unchanged), laid out in the site's style, with fill-in boxes for name and date and signature
+boxes for the client and, for under-18s, a parent or guardian.
+
+To update it, replace `public/consent-form.pdf` with the new PDF (keep the same file name)
+and push. If the number of pages changes, also update `consent.fileInfo` in
+`app/content/site.ts`.
 
 ## Before launch
 

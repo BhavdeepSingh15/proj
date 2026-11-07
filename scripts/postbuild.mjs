@@ -6,7 +6,7 @@ import { serviceSlugs } from "../app/content/services.ts";
 import { seo } from "../app/content/site.ts";
 
 const out = join(process.cwd(), "build", "client");
-const paths = ["/", ...serviceSlugs.map((s) => `/services/${s}`), "/privacy"];
+const paths = ["/", ...serviceSlugs.map((s) => `/services/${s}`), "/privacy", "/consent"];
 const today = new Date().toISOString().slice(0, 10);
 
 writeFileSync(

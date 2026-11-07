@@ -68,6 +68,12 @@ export const faqs = [
     a: `Please cancel or reschedule at least 24 hours ahead by sending a WhatsApp message to ${PHONE_DISPLAY}. For anything related to payments, please send a WhatsApp message.`,
   },
   {
+    // Change 13: consent form.
+    q: "Do I need to sign anything before my first session?",
+    a: "Yes. Please read and sign the informed consent form, then send it back on WhatsApp or by email before your first session.",
+    link: { label: "Get the consent form", href: "/consent" },
+  },
+  {
     q: "What happens in the first session?",
     a: "We start by understanding your background and the concerns that led you to seek help. Over the first 2–3 sessions we both decide whether to continue, and agree on the goals and the process together.",
   },

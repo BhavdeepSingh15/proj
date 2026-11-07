@@ -128,6 +128,13 @@ export function Faq() {
               </summary>
               <div className="qa__a">
                 <p>{f.a}</p>
+                {"link" in f && f.link && (
+                  <p className="qa__link">
+                    <a className="text-link" href={f.link.href}>
+                      {f.link.label}
+                    </a>
+                  </p>
+                )}
               </div>
             </details>
           ))}

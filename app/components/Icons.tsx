@@ -86,3 +86,15 @@ export const ArrowLeftIcon = (p: P) => (
     <path d="M19 12H5M11 6l-6 6 6 6" />
   </svg>
 );
+
+export const DownloadIcon = (p: P) => (
+  <svg {...base} {...p}>
+    <path d="M12 4v11M7 10l5 5 5-5M5 20h14" />
+  </svg>
+);
+
+export const ShareIcon = (p: P) => (
+  <svg {...base} {...p}>
+    <path d="M12 15V4M8 8l4-4 4 4M5 13v5a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-5" />
+  </svg>
+);

@@ -5,5 +5,5 @@ import { serviceSlugs } from "./app/content/services";
 // output in build/client deploys to any static host. No runtime server.
 export default {
   ssr: false,
-  prerender: ["/", ...serviceSlugs.map((s) => `/services/${s}`), "/privacy", "/404"],
+  prerender: ["/", ...serviceSlugs.map((s) => `/services/${s}`), "/privacy", "/consent", "/404"],
 } satisfies Config;

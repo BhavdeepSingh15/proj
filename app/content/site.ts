@@ -203,6 +203,28 @@ export const bookingNotice = {
   hours: "Messages between 9 am and 7 pm are answered as soon as possible.",
 };
 
+// Change 13: informed consent form (owner's instruction, 7 Nov 2026). The PDF
+// (public/consent-form.pdf) is her own form, typeset unchanged.
+export const consent = {
+  title: "Consent form",
+  intro: "Before your first session, please read and sign the informed consent form, then send it back on WhatsApp or by email.",
+  file: "/consent-form.pdf",
+  fileName: "Mind-Mysteries-Consent-Form.pdf",
+  fileInfo: "PDF, 4 pages. You can fill it in on a phone or computer, or print it.",
+  steps: [
+    { title: "Download the form", text: "It covers how therapy works, the session policies and confidentiality. Please read it through before signing." },
+    { title: "Fill it in and sign", text: "On the last page, type your name and the date, then sign. On a phone, open the PDF and use Markup or Fill & Sign. You can also print it, sign by hand and take a clear photo." },
+    { title: "Send it back", text: "Send the signed form, or a clear photo of it, on WhatsApp or by email before your first session." },
+  ],
+  notes: ["For clients under 18, a parent or guardian also signs.", "For couples therapy, each partner fills in their own form."],
+  privacyNote: "Your form is never uploaded to this website. It goes straight from your phone or computer to WhatsApp or email.",
+  whatsappText: "Hello, I am sending my signed consent form.",
+  emailSubject: "Signed consent form",
+  emailBody: "Dear Ma’am,\n\nPlease find my signed consent form attached.\n\nKind regards,",
+  reminder: "New here? Please sign the consent form before your first session.",
+  policiesLine: "Before your first session, please read and sign the informed consent form.",
+};
+
 // "Write an email" composer. Template sentences are copied from the booking
 // site's EmailComposer so both sites send the same email.
 export const composer = {
@@ -240,6 +262,7 @@ export const privacy = {
   paragraphs: [
     "This website does not use cookies, sign-in or advertising trackers.",
     "Visits are counted anonymously with Vercel Web Analytics (which pages are viewed, the country and the type of device) to understand how the site is used. No one is personally identified.",
+    "The consent form is a file you download. A signed form is sent on WhatsApp or by email, never through this website.",
     "The “Write an email” form works only inside your browser. It opens Gmail or your email app with a message you can read and change before sending. Nothing is sent from this website or saved.",
     "This website saves one small setting in your own browser: whether the opening animation has already played. It never leaves your device.",
     "When you tap WhatsApp, Instagram, LinkedIn or Google, you leave this website and that service’s own privacy policy applies. Like any website, the hosting provider processes technical data such as your IP address to deliver pages securely.",
@@ -306,6 +329,20 @@ export const ui = {
     { label: "Session policies", href: "/#policies" },
     { label: "FAQ", href: "/#faq" },
     { label: "Contact", href: "/#contact" },
+    { label: "Consent form", href: "/consent" },
     { label: "Privacy", href: "/privacy" },
   ],
+  consent: {
+    download: "Download the consent form",
+    sendWhatsapp: "Send on WhatsApp",
+    sendsTo: "Email goes to",
+    open: "Open the consent form",
+    shareTitle: "On your phone",
+    shareHint: "Choose the signed PDF or photo, then share it straight to WhatsApp or email.",
+    choose: "Choose the signed form",
+    chooseAgain: "Choose a different file",
+    chosen: "Ready to share:",
+    share: "Share to WhatsApp or email",
+    shareFailed: "Sharing didn’t work on this device. Please use the WhatsApp or email buttons above and attach the file there.",
+  },
 };

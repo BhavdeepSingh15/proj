@@ -7,7 +7,7 @@ import * as svc from "../app/content/services";
 import * as lists from "../app/content/lists";
 import { approvedChanges } from "../app/content/changes";
 
-const IGNORED_KEYS = new Set(["slug", "image", "id", "glyph", "service", "href", "tel", "siteUrl", "imageAlt", "serviceSlugs"]);
+const IGNORED_KEYS = new Set(["slug", "image", "id", "glyph", "service", "href", "tel", "siteUrl", "imageAlt", "serviceSlugs", "file", "fileName"]);
 
 const normalise = (s: string) =>
   s

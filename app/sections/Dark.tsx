@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Heading } from "~/components/Heading";
 import { policies, policiesSection } from "~/content/lists";
-import { expect } from "~/content/site";
+import { ArrowIcon } from "~/components/Icons";
+import { consent, expect, ui } from "~/content/site";
 import { useExpectMotion, usePoliciesMotion } from "~/motion/sections/dark";
 
 const pad = (n: number) => String(n).padStart(2, "0");
@@ -64,6 +65,7 @@ export function Policies() {
             </p>
           </div>
         </div>
+        <div className="policies__main">
         <div className="policies__listwrap">
           <span className="policies__rail" aria-hidden="true">
             <span className="policies__fill" />
@@ -89,6 +91,14 @@ export function Policies() {
             </li>
           ))}
           </ol>
+        </div>
+          <p className="policies__consent">
+            <span>{consent.policiesLine}</span>
+            <a className="btn btn--ghost" href="/consent">
+              {ui.consent.open}
+              <ArrowIcon width={16} height={16} />
+            </a>
+          </p>
         </div>
       </div>
     </section>

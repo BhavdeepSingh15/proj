@@ -602,3 +602,139 @@ html.modal-open {
   min-height: 70vh;
   padding-top: calc(var(--nav-h) + var(--s8));
 }
+
+/* Consent form page */
+.consent__head {
+  display: grid;
+  gap: var(--s4);
+}
+
+.consent__intro {
+  max-width: 52ch;
+  font-size: 1.125rem;
+  color: var(--soft);
+}
+
+.consent__steps {
+  display: grid;
+  gap: var(--s6);
+  margin: var(--s2) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cstep {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: var(--s4);
+  padding-top: var(--s5);
+  border-top: 1px solid var(--hair-light);
+}
+
+.cstep__num {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--lake);
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  color: var(--deep);
+}
+
+.cstep__body {
+  display: grid;
+  gap: var(--s3);
+  min-width: 0;
+}
+
+.cstep__title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.cstep__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2) var(--s3);
+  margin-top: var(--s1);
+}
+
+.cstep__meta {
+  font-size: var(--fs-small);
+  overflow-wrap: anywhere;
+}
+
+.cstep__notes {
+  display: grid;
+  gap: 6px;
+  padding: 0;
+  list-style: none;
+}
+
+.cstep__notes li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.cstep__notes li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  width: 8px;
+  height: 1px;
+  background: var(--soft);
+}
+
+.cshare {
+  display: grid;
+  gap: var(--s2);
+  margin-top: var(--s3);
+  padding: var(--s4);
+  border-radius: var(--r-card);
+  background: var(--tint);
+}
+
+.cshare__title {
+  font-weight: 600;
+}
+
+.cshare__hint,
+.cshare__file {
+  font-size: var(--fs-small);
+  overflow-wrap: anywhere;
+}
+
+.cshare__error {
+  font-size: var(--fs-small);
+  color: var(--dawn-strong);
+}
+
+.consent__privacy {
+  max-width: 56ch;
+  padding-top: var(--s5);
+  border-top: 1px solid var(--hair-light);
+  font-size: var(--fs-small);
+}
+
+@media (max-width: 479px) {
+  .cstep {
+    grid-template-columns: 1fr;
+    gap: var(--s3);
+  }
+  .cstep__actions .btn {
+    width: 100%;
+  }
+}
+
+/* Booking notice: the consent form reminder */
+.notice__consent {
+  padding-top: var(--s3);
+  border-top: 1px solid var(--hair-light);
+  font-size: var(--fs-small);
+}
